@@ -258,6 +258,9 @@
   border: 1px solid antiquewhite;
 }
 
+
+
+/* Category */
 .catergory-slider-wrapper{
   position: relative;
 }
@@ -269,12 +272,14 @@
 .slick-prev {
   position: absolute;
   background-color: #000;
-  top: -10px;
+  bottom: -30px;
   right: 150px;
+
   border: none;
   color: white;
   padding: 15px;
-  z-index: 100;
+
+
 
  
 }
@@ -283,7 +288,7 @@
   right: 0;
   position: absolute;
   background-color: #000;
-  top: -10px;
+  bottom: -30px;
   border: none;
   color: white;
   padding: 15px 30px;
@@ -314,8 +319,8 @@
 
 
 .card-body-wrapper:hover{
-  border: 1px solid black;
-  background-color: antiquewhite;
+  border: 1px solid rgb(145, 143, 143);
+  background-color: rgb(250, 245, 239);
 }
 
 
@@ -331,7 +336,7 @@
 
 .card-name p{
   font-weight: 800;
-  
+  z-index: 251;
 }
 
 .was-price p{
@@ -339,9 +344,31 @@
   text-decoration: line-through;
   color: rgb(160, 126, 80);
   font-size: 13px;
+  z-index: 251;
 }
 
 .now-price p{
   font-weight: 900;
   letter-spacing: 2px;
+  z-index: 251;
+  color: #000;
 }
+
+
+
+.catergory-card:hover .card-image img{
+  scale: 1.8 !important;
+  cursor: pointer;
+  transition: 0.5s;
+  z-index: 250!important;
+  overflow: hidden;
+}
+
+.catergory-card:hover .now-price p{
+  color: white!important;
+}
+ 
+.catergory-card:hover .card-name p{
+  color: rgb(243, 210, 164)!important;
+}
+ 
