@@ -1,0 +1,202 @@
+@import url("https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;800;900&display=swap");
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Roboto", sans-serif;
+}
+
+.body-wrapper {
+  overflow: hidden;
+}
+
+.about-us-heading h2 {
+  font-weight: 800;
+}
+
+.about-us-heading span {
+  color: rgb(239, 212, 178);
+}
+.about-section-wrapper {
+  position: relative;
+  z-index: 2;
+}
+
+.heding-hr {
+  width: 50%;
+  border: 1px solid rgb(185, 138, 78);
+}
+
+.left-image {
+  position: absolute;
+  z-index: 0;
+  right: -45px;
+  top: -45px;
+}
+.left-image img {
+  width: 500px;
+  height: 500px;
+  /* opacity: 50%; */
+  animation-name: example;
+}
+
+#content {
+  z-index: 10;
+}
+
+#content p {
+  text-align: justify;
+}
+
+#move {
+  -webkit-animation: mover 1s infinite alternate;
+  animation: mover 1s infinite alternate;
+}
+#move {
+  -webkit-animation: mover 1s infinite alternate;
+  animation: mover 1s infinite alternate;
+}
+@-webkit-keyframes mover {
+  0% {
+    transform: translateY(0);
+  }
+  100% {
+    transform: translateY(-10px);
+  }
+}
+@keyframes mover {
+  0% {
+    transform: translateY(0);
+  }
+  100% {
+    transform: translateY(-10px);
+  }
+}
+
+.marketing-card-icon {
+  background-color: antiquewhite;
+  padding: 25px;
+  border-radius: 50%;
+  display: flex;
+  float: right;
+}
+
+.marketing-description-wrapper {
+  display: flex;
+  flex-direction: column;
+  padding-left: 10px;
+  z-index: 15;
+}
+
+.marketing-card {
+  display: flex;
+  flex-direction: row;
+  box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+  padding: 15px;
+  border-radius: 15px;
+  transition: transform 0.5;
+  cursor: pointer;
+  border: 2px solid transparent;
+}
+
+.marketing-card:hover .marketing-card-icon {
+  background-color: rgb(0, 0, 0);
+  color: white;
+  transition: 0.5s;
+}
+
+.marketing-card:hover {
+  border: 2px solid antiquewhite;
+}
+
+.marketing-description p {
+  display: flex;
+  margin-top: 0 auto;
+  margin-bottom: 0 auto;
+  align-items: center;
+  justify-content: start;
+}
+
+.marketing-heading p {
+  font-weight: 800;
+  display: flex;
+  text-align: center;
+  margin: auto 0 auto 0;
+}
+
+.markertig-description p {
+  font-weight: 400;
+  color: grey;
+  text-align: start;
+}
+
+@media only screen and (max-width: 600px) {
+  .left-image {
+    position: absolute;
+    z-index: 0;
+    right: -45px;
+    top: 95px;
+  }
+
+  .left-image img {
+    width: 350px;
+    height: 350px;
+    /* opacity: 50%; */
+    animation-name: example;
+    opacity: 80%;
+  }
+}
+
+.marketing-icons-wrapper {
+  z-index: 100;
+}
+
+
+/* Footer */
+
+.footer-wrapper{
+    background-color: black;
+}
+
+.vr{
+    color: aliceblue;
+}
+.footer-heading{
+    line-height: normal;
+}
+.footer-heading h5{
+    color: rgb(236, 230, 230);
+    text-transform: uppercase;
+}
+
+.catergory-list ul li a{
+    color: grey;
+    text-decoration: none;
+}
+
+.catergory-list ul{
+    list-style-type: '-  ';
+}
+.catergory-list ul li a:hover{
+    color: antiquewhite;
+    text-decoration: none;
+}
+
+.footer-hr{
+    border: 1px solid rgb(201, 132, 42);
+    width: 50px;
+    opacity: 100%;
+    transition: 0.5s ease-in-out;
+}
+
+
+#footer-sections:hover .footer-hr{
+    border: 1px solid rgb(201, 132, 42);
+    width: 150px;
+    opacity: 100%;
+}
+
+.end-footer-hr{
+    border: 1px solid grey;
+}
