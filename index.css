@@ -16,7 +16,7 @@
 }
 
 .about-us-heading span {
-  color: rgb(239, 212, 178);
+  color: rgb(237, 179, 102);
 }
 .about-section-wrapper {
   position: relative;
@@ -139,13 +139,7 @@
     top: 95px;
   }
 
-  .left-image img {
-    width: 350px;
-    height: 350px;
-    /* opacity: 50%; */
-    animation-name: example;
-    opacity: 80%;
-  }
+
 }
 
 .marketing-icons-wrapper {
@@ -153,10 +147,41 @@
 }
 
 
-/* Footer */
+/* Category */
 
+.catergory-header h2{
+  font-weight: 800;
+}
+
+.catergory-header span{
+  color: rgb(237, 179, 102);
+};
+
+.main-catergories-wrapper{
+  position: relative;
+}
+
+.left-bg-img{
+  position: absolute;
+  left: -3%;
+ 
+}
+
+
+.left-bg-img img{
+  height: 500px;
+}
+
+
+
+
+
+/* Footer */
+#footer{
+  background-color: black!important;
+}
 .footer-wrapper{
-    background-color: black;
+    background-color: black!important;
 }
 
 .vr{
@@ -199,4 +224,124 @@
 
 .end-footer-hr{
     border: 1px solid grey;
+}
+
+.developer-details h6{
+  color: grey;
+}
+.social-icons-f a i{
+  color: #000;
+  border-radius: 50%;
+  padding: 14px 18px;
+  background-color: antiquewhite;
+  transition: 0.5s ease;
+  border: 1px solid transparent;
+}
+.social-icons a i{
+  color: #000;
+  border-radius: 50%;
+  padding: 14px 16px;
+  background-color: antiquewhite;
+  transition: 0.5s ease;
+  border: 1px solid transparent;
+}
+
+.social-icons a i:hover{
+  background-color: rgb(0, 0, 0);
+  color: white;
+  border: 1px solid antiquewhite;
+}
+
+.social-icons-f a i:hover{
+  background-color: rgb(0, 0, 0);
+  color: white;
+  border: 1px solid antiquewhite;
+}
+
+.catergory-slider-wrapper{
+  position: relative;
+}
+
+.catergories-cards {
+  position: absolute;
+
+}
+.slick-prev {
+  position: absolute;
+  background-color: #000;
+  top: -10px;
+  right: 150px;
+  border: none;
+  color: white;
+  padding: 15px;
+  z-index: 100;
+
+ 
+}
+
+.slick-next{
+  right: 0;
+  position: absolute;
+  background-color: #000;
+  top: -10px;
+  border: none;
+  color: white;
+  padding: 15px 30px;
+}
+
+.card-body-wrapper{
+  /* box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px; */
+  display: flex;
+  justify-content: center;
+  position: relative;
+  flex-direction: column;
+  border: 1px solid transparent;
+  transition: 0.5s;
+  border-radius: 15px;
+
+}
+.stock {
+  position: absolute;
+  display:flex;
+  top: 10px;
+}
+
+.stock p{
+ background-color: rgb(201, 133, 7);
+  color: white;
+  padding: 6px 9px;
+}
+
+
+.card-body-wrapper:hover{
+  border: 1px solid black;
+  background-color: antiquewhite;
+}
+
+
+.card-name , .was-price ,.now-price{
+  position: relative;
+  display: flex;
+  justify-content: center;
+}
+
+.card-data-wrapper{
+  line-height: 5px;
+}
+
+.card-name p{
+  font-weight: 800;
+  
+}
+
+.was-price p{
+  font-weight: 800;
+  text-decoration: line-through;
+  color: rgb(160, 126, 80);
+  font-size: 13px;
+}
+
+.now-price p{
+  font-weight: 900;
+  letter-spacing: 2px;
 }
